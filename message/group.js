@@ -45,7 +45,7 @@ module.exports = welcome = async (bosco, anu) => {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 teks = `*ʜʟᴏ* @${num.split('@')[0]}ʙʀᴏ...👋\n•\n🌹 *ʙɪᴏ* : *${thu.status}*\n🌹 *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ* \n *${mdata.subject}\n*ᴍᴇᴍʙᴇʀs : ${memeg}*\n👾ᴅᴏ ɴᴏᴛ ғᴏʀɢᴇᴛ ᴛʜᴇ ᴅɪsᴄʀɪᴘᴛɪᴏɴ ᴀɴᴅ ʀᴇsᴘᴇᴄᴛ ᴛʜᴇ ʀᴜʟᴇs ᴀɴᴅ ᴍᴇᴍʙᴇʀs....☀️*\n ${time_wel} -  ${time_welc}`
-                welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'DISCRIPTION'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'},type:1}]
+                welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'ᴅɪsᴄʀɪᴘᴛɪᴏɴ📌'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'sᴄʀɪᴘᴛ🎭'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 bosco.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }

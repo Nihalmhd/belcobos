@@ -125,7 +125,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
  @${num.split('@')[0]}
 `
 			promoteBut = [{buttonId:`hm`,buttonText:{displayText:'𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 𝐁𝐫𝐮𝐡..!'},type:1}]
-            promoteButt = { contentText: `${teks}`, footerText: `ℙ𝕣𝕠𝕞𝕠𝕥𝕖 𝔻𝕖𝕔𝕥𝕖𝕔𝕥𝕖𝕕`, buttons: promoteBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
+            promoteButt = { contentText: `${teks}`, footerText: `*☘️𝙿𝚁𝙾𝙼𝙾𝚃𝙴 𝙳𝙴𝚃𝙴𝙲𝚃𝙴𝙳☘️*`, buttons: promoteBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
             bosco.sendMessage(mdata.id, promoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    } else if (anu.action == 'demote') {
 			num = anu.participants[0]
@@ -142,7 +142,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
  @${num.split('@')[0]}
 `
 			demoteBut = [{buttonId:`hm`,buttonText:{displayText:'𝐁𝐞𝐭𝐭𝐞𝐫 𝐋𝐮𝐜𝐤 𝐍𝐞𝐱𝐭 𝐓𝐢𝐦𝐞'},type:1}]
-            demoteButt = { contentText: `${teks}`, footerText: `𝔻𝕖𝕞𝕠𝕥𝕖 𝔻𝕖𝕔𝕥𝕖𝕔𝕥𝕖𝕕`, buttons: demoteBut, headerType: 6, locationMessage: bosco4.message.locationMessage}
+            demoteButt = { contentText: `${teks}`, footerText: `*🍂𝙳𝙴𝙼𝙾𝚃𝙴 𝙳𝙴𝚃𝙴𝙲𝚃𝙴𝙳🍂*`, buttons: demoteBut, headerType: 6, locationMessage: bosco4.message.locationMessage}
             bosco.sendMessage(mdata.id, demoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    }
             } catch (e) {
@@ -155,24 +155,24 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
    remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Alphabot", "caption": `☠️ 𝑲𝑹𝑰𝒁 - 𝑺𝑬𝑹 ☠️`, 'jpegThumbnail': fs.readFileSync(`ds.jpg`)}}}
     metdata = await bosco.groupMetadata(anu.jid)
     if(anu.announce == 'false'){
-    teks = `*[ 𝑮𝑹𝑶𝑼𝑷 𝑶𝑷𝑬𝑵𝑬𝑫 ]*\n`
+    teks = `*[ ❣️𝙶𝚁𝙾𝚄𝙿 𝙾𝙿𝙴𝙽𝙴𝙳❣️ ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
     console.log(clc.yellow(`[ Group Opened ] In ${metdata.subject}`))
   } else if(anu.announce == 'true'){
-    teks = `*[ 𝑮𝑹𝑶𝑼𝑷 𝑪𝑳𝑶𝑺𝑬𝑫 ]*\n`
+    teks = `*[ 🥀𝙶𝚁𝙾𝚄𝙿 𝙲𝙻𝙾𝚂𝙴𝙳🥀 ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
     console.log(clc.yellow(`[ Group Closed ] In ${metdata.subject}`))
   } else if(!anu.desc == ''){
     tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-    teks = `*[ 𝑮𝑹𝑶𝑼𝑷 𝑫𝑬𝑺𝑪𝑹𝑰𝑷𝑻𝑰𝑶𝑵 𝑪𝑯𝑨𝑵𝑮𝑬 ]*\n\n • *ɴᴇᴡ* : *${anu.desc}*`
+    teks = `*[ 🦋𝙶𝚁𝙾𝚄𝙿 𝙳𝙴𝚂𝙲𝚁𝙸𝙿𝚃𝙸𝙾𝙽 𝙲𝙷𝙰𝙽𝙶𝙴𝙳🦋 ]*\n\n • *ɴᴇᴡ* : *${anu.desc}*`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: falfa})
     console.log(clc.yellow(`[ Group Description Change ] In ${metdata.subject}`))
  } else if(anu.restrict == 'false'){
-    teks = `*[ 𝑮𝑹𝑶𝑼𝑷 𝑺𝑬𝑻𝑻𝑰𝑵𝑮 𝑪𝑯𝑨𝑵𝑮𝑬 ]*\n`
+    teks = `*[ 🦋𝙶𝚁𝙾𝚄𝙿 𝚂𝚃𝙽𝙶𝚂 𝙲𝙷𝙰𝙽𝙶𝙴𝙳🦋 ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
     console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
   } else if(anu.restrict == 'true'){
-    teks = `*[ 𝑮𝑹𝑶𝑼𝑷 𝑺𝑬𝑻𝑻𝑰𝑵𝑮 𝑪𝑯𝑨𝑵𝑮𝑬 ]*\n`
+    teks = `*[ 🦋𝙶𝚁𝙾𝚄𝙿 𝚂𝚃𝙽𝙶𝚂 𝙲𝙷𝙰𝙽𝙶𝙴𝙳🦋 ]*\n`
     bosco.sendMessage(metdata.id, teks, MessageType.text, {quoted: falfa})
     console.log(clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
    }

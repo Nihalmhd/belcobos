@@ -30,7 +30,7 @@ module.exports = welcome = async (bosco, anu) => {
             }
             hehe = await getBuffer(pp_user)
             if (anu.action == 'add' && mem.includes(bosco.user.jid)) {
-            bosco.sendMessage(anu.jid, `hello bro I am A Bot 😎🌹 To use ${prefix}menu`, 'conversation')
+            bosco.sendMessage(anu.jid, `ʜʟᴏ ɢʏs....👋 ᴀᴍ ʙᴇʟᴄᴏ sɪʀ ᴘᴜʙʟɪᴄ ʙᴏᴛ....😎👾 ᴛᴏ ᴜsᴇ ${prefix}ᴍᴇɴᴜ`, 'conversation')
             }
              if (anu.action == 'add' && !mem.includes(bosco.user.jid)) {
              const mdata = await bosco.groupMetadata(anu.jid)
@@ -44,7 +44,7 @@ module.exports = welcome = async (bosco, anu) => {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🌹 *Hɪ* @${num.split('@')[0]}\n🌹 *Bɪᴏ* : *${thu.status}*\n🌹 *Mᴇᴍʙᴇʀs : ${memeg}*\n🌹 *Wᴇʟᴄᴏᴍᴇ Tᴏ* \n *${mdata.subject}*\n🌹 *Dᴏɴᴛ Fᴏʀɢᴇᴛ Dɪsᴄʀɪᴘᴛɪᴏɴ*\n ${time_wel} -  ${time_welc}`
+                teks = `*ʜʟᴏ* @${num.split('@')[0]}ʙʀᴏ...👋\n•\n🌹 *ʙɪᴏ* : *${thu.status}*\n🌹 *ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ* \n *${mdata.subject}\n*ᴍᴇᴍʙᴇʀs : ${memeg}*\n👾ᴅᴏ ɴᴏᴛ ғᴏʀɢᴇᴛ ᴛʜᴇ ᴅɪsᴄʀɪᴘᴛɪᴏɴ ᴀɴᴅ ʀᴇsᴘᴇᴄᴛ ᴛʜᴇ ʀᴜʟᴇs ᴀɴᴅ ᴍᴇᴍʙᴇʀs....☀️*\n ${time_wel} -  ${time_welc}`
                 welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'DISCRIPTION'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 bosco.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
@@ -59,8 +59,8 @@ module.exports = welcome = async (bosco, anu) => {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `*Gᴏᴏᴅ Bʏᴇ Bʀᴏᴛʜᴇʀ* 👋\n@${num.split('@')[0]}\n *Rᴇsᴛ Nᴏᴡ Pᴇᴀᴄᴇ* 🌹\n${time_wel} -  ${time_welc}`
-                goodbyeBut = [{buttonId:`${prefix}h`,buttonText:{displayText:'GET OUT 🚪'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'SC'}, type:1}]
+                out = `🥀🎭 *ɢᴏᴏᴅ ʙʏᴇ ʙʀᴏ/sɪs* 👋\n@${num.split('@')[0]}\n•\n•\n🥀🍂 *ʀᴇsᴛ ɴᴏᴡ ᴘᴇᴀᴄᴇ........* 🎗️ \n${time_wel} -  ${time_welc}`
+                goodbyeBut = [{buttonId:`${prefix}h`,buttonText:{displayText:'𝐆𝐄𝐓 𝐎𝐔𝐓 🚪'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'𝐒𝐂𝐑𝐈𝐏𝐓'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 bosco.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
             }
